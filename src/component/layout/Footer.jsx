@@ -28,11 +28,7 @@ const propTypes = {
     return (
       <footer {...props} className={classes}>
         <div className="container">
-          <div className={
-            classNames(
-              'site-footer-inner',
-              topDivider && 'has-top-divider'
-            )}>
+          <div className={classNames('site-footer-inner',topDivider && 'has-top-divider')}>
             <div className="footer-top space-between text-xxs">
               <Logo />
               <FooterSocial />

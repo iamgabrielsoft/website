@@ -5,6 +5,9 @@ import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
 import Modal from '../elements/Modal';
+import features_split_image_02 from '../../assets/images/features-split-image-02.png'
+
+
 
 const propTypes = {
   ...SectionProps.types
@@ -65,30 +68,18 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                This is the official Olawole Hospital Website 
+                This is the Official Website of Olawole Hospital
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
                   <Button tag="a" color="primary" wideMobile href="#">Explore</Button>
-                  <Button tag="a" color="dark" wideMobile href="#"> View on Github</Button>
+                  <Button tag="a" color="dark" wideMobile href="#"> View Hospital Profile</Button>
                 </ButtonGroup>
               </div>
             </div>
           </div>
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-            <a
-              data-video="https://player.vimeo.com/video/174002812"
-              href="#0"
-              aria-controls="video-modal"
-              onClick={openModal}
-            >
-              <Image
-                className="has-shadow"
-                src={require('../../assets/images/video-placeholder.jpg')}
-                alt="Hero"
-                width={896}
-                height={504} />
-            </a>
+              <Image src={features_split_image_02} alt="doctor-image" width={528} height={396} />
           </div>
           <Modal
             id="video-modal"
