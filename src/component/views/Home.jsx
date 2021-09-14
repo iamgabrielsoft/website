@@ -6,7 +6,6 @@ import FeaturesTiles from '../sections/FeaturesTiles';
 import FeaturesSplit from '../sections/FeaturesSplit';
 import Testimonials from '../sections/Testimonials';
 import Cta from '../sections/Cta';
-import TopBar from '../TopBar';
 
 const Home = () => {
 
