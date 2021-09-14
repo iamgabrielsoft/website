@@ -31,7 +31,7 @@ const Image = ({
 
   const image = useRef(null);
 
-  useEffect(() => {
+  useEffect(() => { // eslint-disable-next-line react-hooks/exhaustive-deps
     handlePlaceholder(image.current);
   }, []);
   
