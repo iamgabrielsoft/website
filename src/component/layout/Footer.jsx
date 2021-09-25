@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import Logo from './partials/Logo';
 import FooterSocial from './partials/FooterSocial';
 import FooterNav from './partials/FooterNav';
+import Address from '../elements/Address';
 
 
 
@@ -31,11 +32,12 @@ const propTypes = {
           <div className={classNames('site-footer-inner',topDivider && 'has-top-divider')}>
             <div className="footer-top space-between text-xxs">
               <Logo />
-              <FooterSocial />
+              <Address />
             </div>
             <div className="footer-bottom space-between text-xxs invert-order-desktop">
               <FooterNav />
-              <div className="footer-copyright">Ritech Inc. All right reserved</div>
+             
+              <div className="footer-copyright">Ritech Software Studio. All right reserved</div>
             </div>
           </div>
         </div>

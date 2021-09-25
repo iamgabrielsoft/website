@@ -4,9 +4,7 @@ import { SectionProps } from '../utils/SectionProps';
 import ButtonGroup from '../elements/ButtonGroup';
 import Button from '../elements/Button';
 import Image from '../elements/Image';
-import features_split_image_02 from '../../assets/images/features-split-image-02.png'
-
-
+import Ola from '../../assets/images/Profile.jpeg'; 
 
 const propTypes = {
   ...SectionProps.types
@@ -55,10 +53,7 @@ const Hero = ({
   );
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section {...props} className={outerClasses}>
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
@@ -67,18 +62,18 @@ const Hero = ({
             </h1>
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                This is the Official Website of Olawole Hospital
+                This is the Official Website of Olawore Hospital
                 </p>
               <div className="reveal-from-bottom" data-reveal-delay="600">
                 <ButtonGroup>
-                  <Button tag="a" color="primary" wideMobile href="#">Explore</Button>
-                  <Button tag="a" color="dark" wideMobile href="#"> View Hospital Profile</Button>
+                  <Button tag="a" color="primary" wideMobile href="https://facebook.com/olaworehospital">Facebook</Button>
+                  <Button tag="a" color="dark" wideMobile href="https://instagram.com/olaworehospital"> Instagram</Button>
                 </ButtonGroup>
               </div>
-            </div>
-          </div>
+            </div>                
+          </div>     
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
-              <Image src={features_split_image_02} alt="doctor-image" width={528} height={396} />
+              <Image src={Ola} alt="doctor-image" width={528} height={396} />
           </div>
           {/* <Modal
             id="video-modal"
@@ -87,7 +82,7 @@ const Hero = ({
             video="https://player.vimeo.com/video/174002812"
             videoTag="iframe" /> */}
         </div>
-      </div>
+      </div>  
     </section>
   );
 }

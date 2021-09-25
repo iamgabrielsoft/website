@@ -24,6 +24,7 @@ const defaultProps = {
 }
 
 const Button = ({
+  img, 
   className,
   tag,
   color,
@@ -40,9 +41,11 @@ const Button = ({
     color && `button-${color}`,
     size && `button-${size}`,
     loading && 'is-loading',
+    img,
     wide && 'button-block',
     wideMobile && 'button-wide-mobile',
-    className
+    className, 
+    
   );
 
   const Component = tag;

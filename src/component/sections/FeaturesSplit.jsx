@@ -3,9 +3,9 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-import features_split from '../../assets/images/features-split-image-01.png'
-import features_split2 from '../../assets/images/features-split-image-02.png'
-import feature_split3 from '../../assets/images/features-split-image-02.png'
+import MedicalUniform from '../../assets/images/DrOla Medical uniform.jpeg'
+import LabMan from '../../assets/images/LabMan.jpeg'
+import Nurse from '../../assets/images/Nurse.jpeg'
 
 
 const propTypes = {
@@ -85,7 +85,7 @@ const FeaturesSplit = ({
                 data-reveal-container=".split-item">
                   
                 <Image
-                  src={features_split}
+                  src={LabMan}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -111,7 +111,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={features_split2}
+                  src={MedicalUniform}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -136,7 +136,7 @@ const FeaturesSplit = ({
                   imageFill && 'split-item-image-fill'
                 )}
                 data-reveal-container=".split-item">
-                <Image src={feature_split3} alt="Features split 03" width={528} height={396} />
+                <Image src={Nurse} alt="Features split 03" width={528} height={396} />
               </div>
             </div>
 

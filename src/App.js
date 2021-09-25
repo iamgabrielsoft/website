@@ -9,6 +9,7 @@ import LayoutDefault from './component/layouts/LayoutDefault';
 
 // Views 
 import Home from './component/views/Home';
+import About from './component/views/About'
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -18,11 +19,6 @@ const trackPage = page => {
 };
 
 
-const AboutPage = () => {
-  return (
-    <h2>About Page </h2>
-  )
-}
    
 const App = () => {
   const childRef = useRef();
@@ -42,7 +38,7 @@ const App = () => {
     <ScrollReveal ref={childRef} children={() => (
         <Switch>
           <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-          <AppRoute path="/about" component={AboutPage} layout={LayoutDefault} />
+          <AppRoute path="/about" component={About} layout={LayoutDefault} />
         </Switch>
       )} 
     />
